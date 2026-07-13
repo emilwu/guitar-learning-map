@@ -1,0 +1,167 @@
+<!doctype html>
+<!--
+  Guitar Learning Map
+  Version: 1.0.0
+  Updated: 2026-07-14
+  Summary: Stage 1–4 learning map backed by 16 verified private YouTube playlists.
+-->
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#121311" />
+    <meta name="description" content="從第一個乾淨單音到進階編曲：以 16 個已驗證 YouTube Playlist、能力閘門與每週作品組成的吉他學習地圖。" />
+    <title>Guitar Learning Map｜Stage 1–4</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./data/curriculum.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要內容</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到頁首">
+        <span class="brand-mark" aria-hidden="true">GL</span>
+        <span>Guitar Learning Map</span>
+      </a>
+      <nav class="primary-nav" aria-label="主要導覽">
+        <a href="#placement">從哪開始</a>
+        <a href="#roadmap">學習路線</a>
+        <a href="#curriculum">每週課程</a>
+        <a href="#library">Playlist</a>
+      </nav>
+      <div class="header-progress" aria-label="目前階段進度">
+        <span id="header-progress-label">0 / 4</span>
+        <span class="mini-meter"><span id="header-progress-bar"></span></span>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">A CAPABILITY-FIRST GUITAR CURRICULUM</p>
+          <h1>從乾淨的一個音，<br /><em>走到完整作品。</em></h1>
+          <p class="hero-intro">
+            這不是影片收藏，而是一條有先備、有練習、有通過證據的路線。每週只新增一個主要能力；沒通過就重複，不用靠看更多影片解決卡關。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" id="continue-link" href="#curriculum">開始我的下一週</a>
+            <a class="button button-quiet" href="#placement">先判斷從哪開始</a>
+          </div>
+          <p class="privacy-note">16 個播放清單目前皆為私人；請用擁有 Emil Wu YouTube 頻道的帳號開啟。</p>
+        </div>
+        <aside class="hero-panel" aria-label="課程摘要">
+          <div class="route-glyph" aria-hidden="true">
+            <span>01</span><i></i><span>02</span><i></i><span>03</span><i></i><span>04</span>
+          </div>
+          <dl class="hero-stats">
+            <div><dt>主階段</dt><dd>4</dd></div>
+            <div><dt>播放清單</dt><dd>16</dd></div>
+            <div><dt>排序項目</dt><dd>92</dd></div>
+            <div><dt>判定方式</dt><dd>能力</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section placement-section" id="placement">
+        <div class="section-heading">
+          <p class="section-number">00 · PLACEMENT</p>
+          <h2>不要從「想看什麼」開始。<br />從你能穩定做到什麼開始。</h2>
+          <p>依序勾選已經能錄下、重複做到的能力。只是在某支影片看過，不算通過。</p>
+        </div>
+        <div class="placement-layout">
+          <div class="placement-checks" id="placement-checks">
+            <label class="check-row"><input type="checkbox" data-placement="1" /><span><b>Stage 1 出口</b>8 小節簡單和弦／power chord 循環不中斷，聲音與身體大致放鬆。</span></label>
+            <label class="check-row"><input type="checkbox" data-placement="2" /><span><b>Stage 2 出口</b>刷奏、分解與切分可放進進行；pentatonic 短句有 root、休止與句尾。</span></label>
+            <label class="check-row"><input type="checkbox" data-placement="3" /><span><b>Stage 3 出口</b>兩個相鄰區域能追蹤 root／chord tone，並錄 16 小節 rhythm 與 lead。</span></label>
+            <label class="check-row"><input type="checkbox" data-placement="4" /><span><b>Stage 4 出口</b>能依 top note／changes 選音，完成 8–16 小節 chord-melody 與一條專修。</span></label>
+          </div>
+          <aside class="placement-result" id="placement-result" aria-live="polite"></aside>
+        </div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="section-heading">
+          <p class="section-number">01 · ROADMAP</p>
+          <h2>四個 Stage，一條不能倒著走的能力鏈</h2>
+          <p>支線只在主線能力穩定後開啟。補強清單用來處理已經觀察到的缺口，不是額外必修。</p>
+        </div>
+        <div class="roadmap-grid" id="roadmap-grid"></div>
+      </section>
+
+      <section class="section curriculum-section" id="curriculum">
+        <div class="section-heading compact">
+          <p class="section-number">02 · CURRICULUM</p>
+          <h2>一次只打開一個 Stage</h2>
+          <p>週次是練習負荷，不是硬性日曆。週末證據未通過，就重複該週並縮小範圍。</p>
+        </div>
+        <div class="stage-tabs" id="stage-tabs" role="tablist" aria-label="選擇課程階段"></div>
+        <article class="stage-workspace" id="stage-workspace" aria-live="polite">
+          <header class="stage-overview" id="stage-overview"></header>
+          <div class="stage-progress-card" id="stage-progress-card"></div>
+
+          <section class="workspace-block">
+            <div class="block-heading"><span>ENTRY / EXIT</span><h3>先備與完成標準</h3></div>
+            <div class="boundary-grid">
+              <div><h4>開始前應能</h4><ul id="stage-entry"></ul></div>
+              <div><h4>完成後應能</h4><ul id="stage-exit"></ul></div>
+            </div>
+          </section>
+
+          <section class="workspace-block">
+            <div class="block-heading"><span>DAILY PRACTICE</span><h3 id="daily-title">每日固定節奏</h3></div>
+            <div class="routine-track" id="routine-track"></div>
+          </section>
+
+          <section class="workspace-block">
+            <div class="block-heading with-action">
+              <div><span>WEEKLY PATH</span><h3>每週唯一主目標</h3></div>
+              <button class="text-button" id="reset-stage" type="button">重設本階段進度</button>
+            </div>
+            <div class="weeks-grid" id="weeks-grid"></div>
+          </section>
+
+          <section class="workspace-block">
+            <div class="block-heading"><span>CAPABILITY GATES</span><h3>不是看完，是做得到</h3></div>
+            <ol class="gate-list" id="gate-list"></ol>
+            <p class="optional-note" id="optional-note"></p>
+          </section>
+
+          <section class="workspace-block">
+            <div class="block-heading"><span>STAGE PLAYLISTS</span><h3>本階段的 YouTube 入口</h3></div>
+            <div class="playlist-grid" id="stage-playlists"></div>
+          </section>
+        </article>
+      </section>
+
+      <section class="section library-section" id="library">
+        <div class="section-heading">
+          <p class="section-number">03 · PLAYLIST LIBRARY</p>
+          <h2>16 個已驗證的學習清單</h2>
+          <p>核心清單依學習順序排列；R／G／S／T 與曲風清單只在主線指出缺口或選修時使用。</p>
+        </div>
+        <div class="filter-bar" id="library-filters" aria-label="篩選播放清單"></div>
+        <div class="playlist-grid library-grid" id="playlist-library"></div>
+        <noscript><p class="noscript-card">此頁需要 JavaScript 才能顯示課程資料與本機進度。</p></noscript>
+      </section>
+
+      <section class="section method-section" id="method">
+        <div class="section-heading">
+          <p class="section-number">04 · HOW TO USE</p>
+          <h2>讓 Playlist 單獨可學，網站則負責減少迷路</h2>
+          <p>網站不取代 YouTube；它只補上「為什麼現在看這支、練完要證明什麼、卡住要回哪裡」。</p>
+        </div>
+        <div class="method-grid">
+          <article><span>01</span><h3>先做，不先囤</h3><p>Day 1 觀看指定片段後立刻在琴上重現；推薦影片不等於必要進度。</p></article>
+          <article><span>02</span><h3>一次一個變因</h3><p>弦組、速度、把位、和弦數一次只改一項，才能知道錯誤從哪裡來。</p></article>
+          <article><span>03</span><h3>每週留下證據</h3><p>錄音、錄影、口述或和聲表都可以；「感覺有進步」不能取代可比較成果。</p></article>
+          <article><span>04</span><h3>失敗只補最低項</h3><p>沒有通過就縮小範圍或啟用一支補強影片，不從頭重看整套課程。</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>Guitar Learning Map</strong><p>Stage 1–4 · Version 1.0 · Updated 2026-07-14</p></div>
+      <div><p>進度只儲存在此裝置的瀏覽器，不會上傳。</p><a href="#top">回到頁首 ↑</a></div>
+    </footer>
+  </body>
+</html>
