@@ -1,12 +1,13 @@
 ---
 title: "Guitar Learning Map 網站內容與檔案說明"
-version: 1.0.0
-updated_at: "2026-07-14T02:30:00+08:00"
-status: local_preview_ready
+version: 1.1.0
+updated_at: "2026-07-14T02:40:00+08:00"
+status: published_verified
 summary: >-
-  說明 GitHub Pages 網站的內容來源、檔案職責、互動資料與發布前驗證邊界。
+  說明已發布 GitHub Pages 網站的內容來源、檔案職責、互動資料、公開網址與驗證邊界。
 section_index:
   - "網站目的"
+  - "發布結果"
   - "檔案職責"
   - "內容範圍"
   - "互動與隱私"
@@ -18,6 +19,13 @@ section_index:
 ## 網站目的
 
 網站把 Stage 1–4 已驗證課程與十六個私人 YouTube 播放清單組合成一個可操作的學習地圖。YouTube 清單本身可獨立學習；網站另外提供程度判斷、每週唯一任務、能力閘門、補強分流與本機進度。
+
+## 發布結果
+
+- 公開網站：https://emilwu.github.io/guitar-learning-map/
+- Repository：https://github.com/emilwu/guitar-learning-map
+- GitHub Pages 來源：`main` branch、repository root `/`。
+- HTTPS 已強制啟用，Pages build 與首頁／資源讀取已通過。
 
 ## 檔案職責
 
@@ -47,4 +55,4 @@ section_index:
 1. 檢查桌面與手機版的導覽、Stage 切換與週卡片。
 2. 使用擁有 YouTube 頻道的帳號抽查十六個私人 Playlist 連結。
 3. 驗證重新整理後進度仍存在，重設只清除目前 Stage。
-4. 確認 GitHub Pages repo 與發佈來源後才公開網址；本機完成不代表已部署。
+4. 使用實際手機與桌面瀏覽器抽查導覽、可讀性與 private Playlist 登入行為。

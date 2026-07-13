@@ -1,7 +1,7 @@
 ---
 title: "Guitar Learning Map"
-version: 1.0.0
-updated_at: "2026-07-14T02:35:00+08:00"
+version: 1.1.0
+updated_at: "2026-07-14T02:40:00+08:00"
 summary: >-
   Stage 1–4 吉他學習地圖，以十六個已驗證 YouTube Playlist、每週任務與能力閘門組成。
 section_index:
@@ -15,6 +15,8 @@ section_index:
 ## 網站內容
 
 從基本動作、節奏與 Pentatonic，到指板導航、進階和聲與編曲的四階段吉他課程。網站包含 49 個主線週次、十六個 YouTube Playlist、每日練習配置、週末通過證據與能力閘門。
+
+公開網站：[Guitar Learning Map](https://emilwu.github.io/guitar-learning-map/)
 
 ## 使用方式
 
