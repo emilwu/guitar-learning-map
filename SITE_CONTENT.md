@@ -1,7 +1,7 @@
 ---
 title: "Guitar Learning Map 網站內容與檔案說明"
-version: 1.1.0
-updated_at: "2026-07-14T02:40:00+08:00"
+version: 1.2.0
+updated_at: "2026-10-26T00:00:00+08:00"
 status: published_verified
 summary: >-
   說明已發布 GitHub Pages 網站的內容來源、檔案職責、互動資料、公開網址與驗證邊界。
@@ -31,11 +31,16 @@ section_index:
 
 | 檔案 | 用途 |
 |---|---|
-| `index.html` | 首頁、程度判斷、Stage 工作區、Playlist Library 與方法說明 |
-| `styles.css` | 深色編輯式視覺、桌面／行動版版面、鍵盤焦點與減少動態設定 |
-| `app.js` | Stage 切換、每週進度、程度建議、Playlist 篩選與本機儲存 |
+| `index.html` | 首頁、程度判斷、每週三步流程、階段出口、Playlist Library 與方法說明 |
+| `styles.css` | 深色編輯式視覺、桌面／行動版版面、每週流程與計劃頁版面 |
+| `app.js` | Stage 切換、每週步驟、進度、程度建議、Playlist 篩選與本機儲存 |
 | `data/curriculum.js` | Stage 1–4 課程、週次、能力閘門與十六個已驗證 Playlist IDs |
+| `data/guided-flow.js` | 每週學習方式、影片提示與練習工具連結；由建置腳本產生 |
 | `data/stage4.js` | 第一版 Stage 4 原型資料；保留作版本稽核，不再由首頁載入 |
+| `plan/*.html` | 學習計劃總覽、Stage 1–4 與分類附錄；由建置腳本產生 |
+| `content/plan/` | 計劃頁的 Markdown 來源 |
+| `content/guided-flow.mjs` | 每週流程的編輯來源 |
+| `scripts/build-plan.mjs` | 把 Markdown 與每週流程轉成靜態 HTML 與 `data/guided-flow.js` |
 | `.nojekyll` | 讓 GitHub Pages 直接提供靜態檔案 |
 
 ## 內容範圍
@@ -48,7 +53,7 @@ section_index:
 
 ## 互動與隱私
 
-網站只把目前 Stage、程度勾選、每週完成狀態與 Playlist 篩選保存在瀏覽器 `localStorage`。沒有登入、分析追蹤、伺服器資料庫或上傳功能。
+網站把目前 Stage、程度勾選、每週完成狀態、Playlist 篩選、上次停下的步驟，以及階段出口勾選保存在瀏覽器 `localStorage`，鍵名仍是 `guitar-learning-map-v1`。週完成的鍵是 `stageId-週次`。沒有登入、分析追蹤、伺服器資料庫或上傳功能。練習工具以 iframe 嵌在第 3 步，開啟時會帶 `?from=map`。
 
 ## 發布前檢查
 
