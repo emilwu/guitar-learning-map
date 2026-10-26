@@ -14,6 +14,7 @@
     <title>Guitar Learning Map｜Stage 1–4</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./data/curriculum.js" defer></script>
+    <script src="./data/guided-flow.js" defer></script>
     <script src="./app.js" defer></script>
   </head>
   <body>
@@ -28,11 +29,12 @@
         <a href="#roadmap">學習路線</a>
         <a href="#curriculum">每週課程</a>
         <a href="#library">Playlist</a>
+        <a href="./plan/index.html">學習計劃</a>
       </nav>
-      <div class="header-progress" aria-label="目前階段進度">
+      <a class="header-progress" id="resume-link" href="#curriculum" aria-label="繼續上次的每週流程">
         <span id="header-progress-label">0 / 4</span>
         <span class="mini-meter"><span id="header-progress-bar"></span></span>
-      </div>
+      </a>
     </header>
 
     <main id="main">
@@ -46,6 +48,7 @@
           <div class="hero-actions">
             <a class="button button-primary" id="continue-link" href="#curriculum">開始我的下一週</a>
             <a class="button button-quiet" href="#placement">先判斷從哪開始</a>
+            <a class="button button-quiet" href="./plan/index.html">看學習計劃</a>
           </div>
           <p class="privacy-note">16 個播放清單目前皆為私人；請用擁有 Emil Wu YouTube 頻道的帳號開啟。</p>
         </div>
@@ -91,8 +94,8 @@
       <section class="section curriculum-section" id="curriculum">
         <div class="section-heading compact">
           <p class="section-number">02 · CURRICULUM</p>
-          <h2>一次只打開一個 Stage</h2>
-          <p>週次是練習負荷，不是硬性日曆。週末證據未通過，就重複該週並縮小範圍。</p>
+          <h2>一次走完這一週</h2>
+          <p>學習方式、影片、練習在同一頁依序進行。週次是練習負荷，不是硬性日曆；階段出口在每週走完之後。</p>
         </div>
         <div class="stage-tabs" id="stage-tabs" role="tablist" aria-label="選擇課程階段"></div>
         <article class="stage-workspace" id="stage-workspace" aria-live="polite">
@@ -112,18 +115,15 @@
             <div class="routine-track" id="routine-track"></div>
           </section>
 
-          <section class="workspace-block">
+          <section class="workspace-block" id="week-studio">
             <div class="block-heading with-action">
-              <div><span>WEEKLY PATH</span><h3>每週唯一主目標</h3></div>
+              <div><span>WEEKLY PATH</span><h3 id="week-studio-title">這一週的三步</h3></div>
               <button class="text-button" id="reset-stage" type="button">重設本階段進度</button>
             </div>
-            <div class="weeks-grid" id="weeks-grid"></div>
-          </section>
-
-          <section class="workspace-block">
-            <div class="block-heading"><span>CAPABILITY GATES</span><h3>不是看完，是做得到</h3></div>
-            <ol class="gate-list" id="gate-list"></ol>
-            <p class="optional-note" id="optional-note"></p>
+            <div class="week-rail" id="week-rail" aria-label="選擇週次"></div>
+            <div class="step-indicator" id="step-indicator" role="tablist" aria-label="本週步驟"></div>
+            <div class="step-panel" id="step-panel" role="tabpanel"></div>
+            <div class="step-move" id="step-move" aria-label="步驟移動"></div>
           </section>
 
           <section class="workspace-block">
@@ -148,7 +148,7 @@
         <div class="section-heading">
           <p class="section-number">04 · HOW TO USE</p>
           <h2>讓 Playlist 單獨可學，網站則負責減少迷路</h2>
-          <p>網站不取代 YouTube；它只補上「為什麼現在看這支、練完要證明什麼、卡住要回哪裡」。</p>
+          <p>每週都在這一頁走完：先看怎麼學，再看影片，然後在嵌入的練習工具裡做。完整計畫放在同一站的<a href="./plan/index.html">學習計劃</a>。</p>
         </div>
         <div class="method-grid">
           <article><span>01</span><h3>先做，不先囤</h3><p>Day 1 觀看指定片段後立刻在琴上重現；推薦影片不等於必要進度。</p></article>
@@ -160,8 +160,8 @@
     </main>
 
     <footer class="site-footer">
-      <div><strong>Guitar Learning Map</strong><p>Stage 1–4 · Version 1.0 · Updated 2026-07-14</p></div>
-      <div><p>進度只儲存在此裝置的瀏覽器，不會上傳。</p><a href="#top">回到頁首 ↑</a></div>
+      <div><strong>Guitar Learning Map</strong><p>Stage 1–4 · Version 1.2 · Updated 2026-10-26</p></div>
+      <div><p>進度只儲存在此裝置的瀏覽器，不會上傳。</p><a href="./plan/index.html">學習計劃</a> · <a href="#top">回到頁首 ↑</a></div>
     </footer>
   </body>
 </html>
