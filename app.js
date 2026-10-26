@@ -234,6 +234,29 @@
       <div class="step-actions"><a id="tool-open" href="${escapeHtml(src)}" target="_blank" rel="noreferrer">開啟全螢幕</a></div>`;
   }
 
+  function practiceLogHref(stage, week, practice) {
+    const params = new URLSearchParams();
+    params.set("stage", String(Number(stage.number)));
+    params.set("week", String(week.n));
+    const sentence = String(practice?.exercise || week.title).split("。")[0].trim();
+    params.set("exercise", sentence.slice(0, 80));
+    const tools = practice?.tools || [];
+    const metro = tools.find((item) => item.href.includes("/metronome/"));
+    const board = tools.find((item) => item.href.includes("/fretboard/"));
+    const chordTool = tools.find((item) => item.href.includes("/chord/"));
+    const named = metro || board || chordTool;
+    if (named?.href.includes("/metronome/")) params.set("tool", "metronome");
+    else if (named?.href.includes("/fretboard/")) params.set("tool", "fretboard");
+    else if (named) params.set("tool", "chord");
+    if (metro) {
+      const bpm = new URL(metro.href).hash.match(/bpm=(\d+)/);
+      if (bpm) params.set("bpm", bpm[1]);
+    }
+    const url = new URL("https://emilwu.github.io/guitar-practice-tools/log/");
+    url.hash = params.toString();
+    return withFrom(url.toString());
+  }
+
   function renderPracticeBlock(practice, titlePrefix) {
     const proposed = practice.linkBasis === "proposed"
       ? `<p class="origin-note">處方沒有指定這個和弦或調。下面是依照本週任務舉的例子。</p>`
@@ -288,8 +311,8 @@
     return `<p class="step-kicker">03 · 練習</p>
       <h3>${escapeHtml(week.title)}</h3>
       ${renderPracticeBlock(lesson.practice, `第 ${week.n} 週練習`)}
-      <p class="embed-note">練完留在這一頁。通過證據後再勾選完成。</p>
-      <div class="step-actions"><button type="button" data-toggle-week="${stage.id}-${week.n}" aria-pressed="${done}">${done ? "取消完成" : "通過並完成"}</button></div>`;
+      <p class="embed-note">練完留在這一頁。通過證據後再勾選完成。紀錄頁即將上線，連結已帶上這一週。</p>
+      <div class="step-actions"><a href="${escapeHtml(practiceLogHref(stage, week, lesson.practice))}" target="_blank" rel="noreferrer">記錄這次練習</a><button type="button" data-toggle-week="${stage.id}-${week.n}" aria-pressed="${done}">${done ? "取消完成" : "通過並完成"}</button></div>`;
   }
 
   function renderStudio(stage) {

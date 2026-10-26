@@ -425,13 +425,19 @@ window.GUIDED_FLOW = {
           "watchFor": "看小調五聲音階的公式、根音和一個基本位置。這週不加入大調、blue note 或其他指型。",
           "reading": [
             "命名例子就是 A minor pentatonic。",
-            "短句證據是兩小節問句加兩小節答句。工具上的五聲框是這個工具自己的框，不是影片的 Pattern 編號。"
+            "短句證據是兩小節問句加兩小節答句。指板訓練的 E 型是它的第 1 框，根音在第 6 弦，不是影片的 Pattern 編號。"
           ],
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "打開 A minor pentatonic 第 1 框（根音在第 6 弦）。上行與下行都在 root 停住，說出 R–♭3–4–5–♭7。接著只用 3 個音做兩小節問句與兩小節答句，句尾回 A。",
+            "exercise": "打開 A minor pentatonic 第 1 框（根音在第 6 弦）。指板訓練用 E 型，也就是這個工具的第 1 框。上行與下行都在 root 停住，說出 R–♭3–4–5–♭7。接著只用 3 個音做兩小節問句與兩小節答句，句尾回 A。",
             "tools": [
+              {
+                "id": "fretboard",
+                "label": "指板 · A 小調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=A&scale=min-pent&shape=E",
+                "soon": false
+              },
               {
                 "id": "chord",
                 "label": "A minor pentatonic",
@@ -458,8 +464,14 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "仍以 A 為主音，改看 major pentatonic，說出 R–2–3–5–6，並標出 root。錄一段短即興：有一次重複、一處休止、一個回到 root 或 chord tone 的句尾。不要和 minor 混在同一遍。",
+            "exercise": "仍以 A 為主音，改看 major pentatonic 的同一個第 1 框（E 型，根音在第 6 弦）。說出 R–2–3–5–6，並標出 root。錄一段短即興：有一次重複、一處休止、一個回到 root 或 chord tone 的句尾。不要和 minor 混在同一遍。",
             "tools": [
+              {
+                "id": "fretboard",
+                "label": "指板 · A 大調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=A&scale=maj-pent&shape=E",
+                "soon": false
+              },
               {
                 "id": "chord",
                 "label": "A major pentatonic",
@@ -490,18 +502,24 @@ window.GUIDED_FLOW = {
           "watchFor": "看單弦上的音名怎麼隨品格移動，以及第 6、5 弦為什麼能當找 root 的起點。",
           "reading": [
             "週末閘門：指定 3 個音，各在 10 秒內找到至少 3 個位置。",
-            "指板訓練還沒上線，這一週直接在琴上找。"
+            "先只練自然音，再加入升降音。第 1 弦是高音 E。"
           ],
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "請人指定 3 個音名，或自己抽 3 個。每個音在第 6 弦和第 5 弦各找位置，10 秒內至少 3 個（含八度）。說出音名再彈。沒有適合的線上練習可代替這件事。",
+            "exercise": "在第 6 弦和第 5 弦、0–12 格找音。先開自然音那一輪，60 秒內把題目點完；再換含升降的一輪。閘門仍是：指定 3 個音名，每個在 10 秒內找到至少 3 個位置（含八度）。說出音名再彈。",
             "tools": [
               {
                 "id": "fretboard",
-                "label": "指板訓練",
-                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/",
-                "soon": true
+                "label": "指板 · 自然音 · 第 6、5 弦",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=find&naturals=1&strings=65&frets=0-12&timer=60",
+                "soon": false
+              },
+              {
+                "id": "fretboard",
+                "label": "指板 · 含升降 · 第 6、5 弦",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=find&strings=65&frets=0-12&timer=60",
+                "soon": false
               }
             ]
           }
@@ -523,13 +541,19 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "抽 3 個 root。每個從第 6 弦彈出 root，接著指出它的五度與八度，再說出音名。指板工具上線前，就在琴上做這 3 次。",
+            "exercise": "抽 3 個 root。每個從第 6 弦彈出 root，接著指出五度與八度，再說出音名。指板的五度題會給一個根音，請你點出 5 度；同音題用來找八度，因為八度是同一個音名。弦限在第 6、5 弦，0–12 格。",
             "tools": [
               {
                 "id": "fretboard",
-                "label": "指板訓練",
-                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/",
-                "soon": true
+                "label": "指板 · 從根音找五度",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=interval&imode=locate&degrees=5&strings=65&frets=0-12",
+                "soon": false
+              },
+              {
+                "id": "fretboard",
+                "label": "指板 · 同音與八度 · 第 6、5 弦",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=find&strings=65&frets=0-12",
+                "soon": false
               }
             ]
           }
@@ -619,13 +643,13 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "自己選一個 Root of the Day（例子用 C，處方沒有指定）。在三條弦上找到 C，彈 R–3–5–3–R，再說 minor 的 R–♭3–5–♭3–R。指板頁可以對音名，和弦頁用來核對 C 與 Cm 的組成音。",
+            "exercise": "自己選一個 Root of the Day（例子用 C，處方沒有指定）。指板會隨機給一個根音，請你點出大三度、小三度或五度；和弦頁用 C 與 Cm 核對組成音。然後在三條不同的弦上彈 R–3–5–3–R，再彈 R–♭3–5–♭3–R。",
             "tools": [
               {
                 "id": "fretboard",
-                "label": "指板訓練",
-                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/",
-                "soon": true
+                "label": "指板 · 大三與小三",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=interval&imode=locate&degrees=3,b3,5&frets=0-12",
+                "soon": false
               },
               {
                 "id": "chord",
@@ -659,19 +683,25 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "以 Am 為例（調沒有被指定）。先在工具上指出 R、♭3、5，再在琴上把同一組音從一組弦移到相鄰的一組弦。每次移動前先說出下一個音的功能。",
+            "exercise": "以 Am 為例（調沒有被指定）。先在低音三弦點出 R、♭3、5，再換到高音三弦（第 3、2、1 弦，1 是高音 E）點同一組音。每次移動前先說出下一個音的功能。指板的根音是題目給的，不一定是 A；A 用來在和弦頁聽這個例子。",
             "tools": [
+              {
+                "id": "fretboard",
+                "label": "指板 · 小三和弦音 · 低音弦",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=interval&imode=locate&degrees=R,b3,5&strings=654&frets=0-12",
+                "soon": false
+              },
+              {
+                "id": "fretboard",
+                "label": "指板 · 小三和弦音 · 高音弦",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=interval&imode=locate&degrees=R,b3,5&strings=321&frets=0-12",
+                "soon": false
+              },
               {
                 "id": "chord",
                 "label": "Am",
                 "href": "https://emilwu.github.io/guitar-practice-tools/chord/#chord=Am",
                 "soon": false
-              },
-              {
-                "id": "fretboard",
-                "label": "指板訓練",
-                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/",
-                "soon": true
               }
             ]
           }
@@ -757,7 +787,7 @@ window.GUIDED_FLOW = {
           "approach": [
             "先快速看五位置是同一組音的重疊，不背那套 Pattern 號碼。",
             "高音只借一點，低音只借一點，每次回老家。",
-            "工具的五聲框不等於影片的 Pattern 2／3／4。"
+            "指板訓練的 E 型是它的第 1 框，不是影片的 Pattern 2／3／4。"
           ],
           "watchFor": "看小調路徑怎麼從家位置滑向高音與低音。注意 root 始終說得出來。",
           "reading": [
@@ -767,8 +797,14 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "打開 C♯ minor pentatonic。用工具認識音在哪裡，但琴上的路徑跟影片：以家位置為中心，高音鄰區與低音鄰區各借一次，再回 root。不要把工具的框號當成影片的 Pattern 號。",
+            "exercise": "打開 C♯ minor pentatonic 的第 1 框（E 型，根音在第 6 弦）。這是指板訓練自己的框，不是影片的 Pattern 號。琴上的路徑跟影片：以家位置為中心，高音鄰區與低音鄰區各借一次，再回 root。",
             "tools": [
+              {
+                "id": "fretboard",
+                "label": "指板 · C♯ 小調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=C%23&scale=min-pent&shape=E",
+                "soon": false
+              },
               {
                 "id": "chord",
                 "label": "C♯ minor pentatonic",
@@ -795,8 +831,20 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "先在 C♯ minor 把 2–4 拍 motif 彈熟，再移到 A minor：第 6 弦找到 A，重建同一條路徑，motif 的節奏不變。第三個小調自己選，同樣先找 root。",
+            "exercise": "先在 C♯ minor 的第 1 框把 2–4 拍 motif 彈熟，再移到 A minor：同一個 E 型，第 6 弦找到 A，motif 的節奏不變。第三個小調自己選，同樣先找 root。E 型是指板訓練的第 1 框，不是影片的 Pattern 號。",
             "tools": [
+              {
+                "id": "fretboard",
+                "label": "指板 · C♯ 小調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=C%23&scale=min-pent&shape=E",
+                "soon": false
+              },
+              {
+                "id": "fretboard",
+                "label": "指板 · A 小調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=A&scale=min-pent&shape=E",
+                "soon": false
+              },
               {
                 "id": "chord",
                 "label": "C♯m",
@@ -829,8 +877,20 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "打開 E major pentatonic，在琴上走家位置 → 高音鄰區 → 回家 → 低音鄰區。2nd 滑到 major 3rd 時先聽準再滑。然後把同一條路移到 B major。",
+            "exercise": "打開 E major pentatonic 的第 1 框，在琴上走家位置 → 高音鄰區 → 回家 → 低音鄰區。2nd 滑到 major 3rd 時先聽準再滑。然後把同一個 E 型移到 B major。這是指板訓練的框，不是影片的 Pattern 號。",
             "tools": [
+              {
+                "id": "fretboard",
+                "label": "指板 · E 大調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=E&scale=maj-pent&shape=E",
+                "soon": false
+              },
+              {
+                "id": "fretboard",
+                "label": "指板 · B 大調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=B&scale=maj-pent&shape=E",
+                "soon": false
+              },
               {
                 "id": "chord",
                 "label": "E major pentatonic",
@@ -865,6 +925,12 @@ window.GUIDED_FLOW = {
             "linkBasis": "sourced",
             "exercise": "用 C♯ minor pentatonic 錄第一版（整段不換）。第二版依 C♯m、A、E、B 切換對應的 pentatonic，工具可分別打開核對。第三版混合，16 小節不停，並說出你留下的共同音。三版用同一個 60 BPM 四分音符，方便比較。處方沒有指定 BPM。",
             "tools": [
+              {
+                "id": "fretboard",
+                "label": "指板 · C♯ 小調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=C%23&scale=min-pent&shape=E",
+                "soon": false
+              },
               {
                 "id": "chord",
                 "label": "C♯m pentatonic",
@@ -924,8 +990,14 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "在 G major pentatonic 裡只選 3 個音。做一個 2–4 拍的 motif，原樣再彈一次，第三次只改節奏或最後一個音。第二句要回答第一句，並回到 G 或和弦音。",
+            "exercise": "在 G major pentatonic 的第 1 框裡只選 3 個音。做一個 2–4 拍的 motif，原樣再彈一次，第三次只改節奏或最後一個音。第二句要回答第一句，並回到 G 或和弦音。",
             "tools": [
+              {
+                "id": "fretboard",
+                "label": "指板 · G 大調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=G&scale=maj-pent&shape=E",
+                "soon": false
+              },
               {
                 "id": "chord",
                 "label": "G major pentatonic",
@@ -1426,8 +1498,26 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "用 Am、Dm、Em 當三個例子。每個先彈和弦，再只在該根音的 minor pentatonic 裡彈一小句，最後停在 root。三個連錄，節拍器 60 BPM、八分音符。不要在這週混進大調。",
+            "exercise": "用 Am、Dm、Em 當三個例子。指板先開 A 的第 1 框；D 和 E 用同一個 E 型，只改調。每個先彈和弦，再只在該根音的 minor pentatonic 裡彈一小句，最後停在 root。三個連錄，節拍器 60 BPM、八分音符。不要在這週混進大調。",
             "tools": [
+              {
+                "id": "fretboard",
+                "label": "指板 · A 小調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=A&scale=min-pent&shape=E",
+                "soon": false
+              },
+              {
+                "id": "fretboard",
+                "label": "指板 · D 小調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=D&scale=min-pent&shape=E",
+                "soon": false
+              },
+              {
+                "id": "fretboard",
+                "label": "指板 · E 小調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=E&scale=min-pent&shape=E",
+                "soon": false
+              },
               {
                 "id": "chord",
                 "label": "Am pentatonic",
@@ -1466,8 +1556,26 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "A 用 A major pentatonic 彈一小句並停在和弦音，接著 D，再 E。每一拍換和弦之前先彈一下那個和弦。錄一輪。",
+            "exercise": "A 用 A major pentatonic 的第 1 框彈一小句並停在和弦音，接著把同一個 E 型改成 D，再改成 E。每一拍換和弦之前先彈一下那個和弦。錄一輪。",
             "tools": [
+              {
+                "id": "fretboard",
+                "label": "指板 · A 大調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=A&scale=maj-pent&shape=E",
+                "soon": false
+              },
+              {
+                "id": "fretboard",
+                "label": "指板 · D 大調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=D&scale=maj-pent&shape=E",
+                "soon": false
+              },
+              {
+                "id": "fretboard",
+                "label": "指板 · E 大調五聲 · 第 1 框",
+                "href": "https://emilwu.github.io/guitar-practice-tools/fretboard/#mode=scale&key=E&scale=maj-pent&shape=E",
+                "soon": false
+              },
               {
                 "id": "chord",
                 "label": "A major pentatonic",
