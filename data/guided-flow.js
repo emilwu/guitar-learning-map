@@ -25,13 +25,13 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "六弦各彈一個乾淨單音。若要節拍，從 60 BPM 或更慢開始；60 仍不穩就再降。這一週即使彈乾淨也不升速。",
+            "exercise": "六弦各彈一個乾淨單音。節拍器開在處方寫的 60 BPM、四分音符。60 仍不穩就自己把 BPM 調低。這一週即使彈乾淨也不要調高。",
             "tools": [
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -53,13 +53,13 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "選一組相鄰弦，例如 2–3 弦或 6–5 弦。down／up 維持交替。用節拍器守住一個穩定速度；加速後若連續兩次失敗，退回上一個成功的速度，今天不要再挑戰。",
+            "exercise": "選一組相鄰弦，例如 2–3 弦或 6–5 弦。down／up 維持交替。節拍器先開 60 BPM、八分音符。連續兩次大約九成乾淨，才自己加 2–4 BPM；失敗就調回上一個速度。不要開自動加速。",
             "tools": [
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -81,13 +81,13 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "用節拍器彈 4–8 拍短序列。錄一次，只寫下今天最常錯的那個轉換，明天一開始只重練那一個。",
+            "exercise": "用節拍器彈 4–8 拍短序列。預設是 60 BPM、八分音符；不穩就調低，不要追影片。錄一次，只寫下今天最常錯的那個轉換，明天一開始只重練那一個。",
             "tools": [
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -109,7 +109,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "錄 8 小節，換和弦時右手維持拍點。處方沒有指定是哪兩個和弦。下面用 G → C 當開放和弦例子；若你練的是 power chord，改彈 E5 與 A5，仍用同一個速度。60 BPM 不穩就再慢。",
+            "exercise": "錄 8 小節，換和弦時右手維持拍點。處方沒有指定是哪兩個和弦。下面用 G → C 當開放和弦例子；若你練的是 power chord，改彈 E5 與 A5。節拍器開 60 BPM、八分音符，不穩就再慢。",
             "tools": [
               {
                 "id": "chord",
@@ -119,9 +119,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -140,7 +140,7 @@ window.GUIDED_FLOW = {
         "anchor": "s2-jazz",
         "origin": "sourced",
         "linkBasis": "sourced",
-        "exercise": "不計入 Stage 2 畢業。進入條件是 barre 與兩個和弦能不停拍，而且看過順階和弦。每天約 4 分鐘，放在既有練習最後，不把總時間加長。Shell voicing 只彈 R、3、7。C、F、B♭ 三個調各做 ii–V–I，60–80 BPM，節拍器只想著 2、4 拍；節拍器頁還沒上線，速度先照這個範圍。",
+        "exercise": "不計入 Stage 2 畢業。進入條件是 barre 與兩個和弦能不停拍，而且看過順階和弦。每天約 4 分鐘，放在既有練習最後，不把總時間加長。Shell voicing 只彈 R、3、7。C、F、B♭ 三個調各做 ii–V–I，範圍是 60–80 BPM。節拍器開在紀錄範例的 70，四分音符，重音設成只響第 2 與第 4 拍。Swing 由你的刷法做出來；點擊本身是正拍。想更慢就調到 60，不要超過 80。",
         "tools": [
           {
             "id": "chord",
@@ -162,9 +162,9 @@ window.GUIDED_FLOW = {
           },
           {
             "id": "metronome",
-            "label": "節拍器",
-            "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-            "soon": true
+            "label": "節拍器 · 70 · 只響 2 與 4",
+            "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=70&meter=4/4&subdivision=quarter&swing=50&accents=mama",
+            "soon": false
           }
         ]
       },
@@ -186,7 +186,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "用 E 與 A 練換和弦。先一個和弦維持全音符或二分音符，右手一直撥；穩了再改成固定八分音符。錄 8 小節，標出右手有沒有停。",
+            "exercise": "用 E 與 A 練換和弦。先開 60 BPM 的四分音符，一個和弦維持全音符或二分音符，右手一直撥；穩了再改開 60 的八分音符。處方沒有另寫 BPM。錄 8 小節，標出右手有沒有停。",
             "tools": [
               {
                 "id": "chord",
@@ -196,9 +196,15 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
+              },
+              {
+                "id": "metronome",
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -220,7 +226,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "處方要求一個形狀、兩個位置，沒有指定和弦。這裡用 F 當例子：先只按食指 barre，逐弦聽；乾淨後再加其餘手指，並移到相差兩格的第二個位置。不要連續滑一整條指板。",
+            "exercise": "處方要求一個形狀、兩個位置，沒有指定和弦。這裡用 F 當例子：先只按食指 barre，逐弦聽；乾淨後再加其餘手指，並移到相差兩格的第二個位置。不要連續滑一整條指板。逐弦檢查用 60 BPM 的四分音符，處方沒有指定速度。",
             "tools": [
               {
                 "id": "chord",
@@ -230,9 +236,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -254,7 +260,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "打開 Cmaj7，接著到 Em。選定一種分解順序，用節拍器連續彈 8 小節。錯音只重彈那一次跨弦，不要從頭重來。",
+            "exercise": "打開 Cmaj7，接著到 Em。選定一種分解順序，用 60 BPM、八分音符連續彈 8 小節。處方沒有指定 BPM。錯音只重彈那一次跨弦，不要從頭重來。",
             "tools": [
               {
                 "id": "chord",
@@ -264,9 +270,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -288,13 +294,13 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "不設指定 BPM。先拍手數拍，再把同一個節奏用悶音和弦彈出來。節拍器負責格子；重音由你自己放。錄一小段，口頭說出重音落在哪裡。",
+            "exercise": "處方不設指定 BPM。節拍器開 60、八分音符，重音只在第 1 拍，當作格子。切分的重音由你自己彈。先拍手，再放到悶音和弦。錄一小段，口頭說出重音落在哪裡。",
             "tools": [
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -316,7 +322,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "分段練 A5、C5、E5。工具先打開 A、C、E，讓你看根音；琴上只彈根音與五度，並加上 palm mute 的那一段。三段各 4 小節後，用慢於影片的速度串起來。",
+            "exercise": "分段練 A5、C5、E5。工具先打開 A、C、E，讓你看根音；琴上只彈根音與五度，並加上 palm mute 的那一段。三段各 4 小節後，用 60 BPM 的八分音符串起來，慢於影片。處方沒有指定 BPM。",
             "tools": [
               {
                 "id": "chord",
@@ -332,9 +338,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -579,7 +585,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "處方寫 3–4 個和弦，沒有寫是哪些。用你已經會的四個和弦；下面以 C → Am 起頭，你再接上 F 與 G，每次換到工具顯示的較近轉位。錄 16 小節，右手不停。",
+            "exercise": "處方寫 3–4 個和弦，沒有寫是哪些。用你已經會的四個和弦；下面以 C → Am 起頭，你再接上 F 與 G，每次換到工具顯示的較近轉位。錄 16 小節，右手不停。節拍器開 60 BPM 的四分音符，只負責別停；處方沒有指定 BPM。",
             "tools": [
               {
                 "id": "chord",
@@ -589,9 +595,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -687,7 +693,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "I–vi–IV–V 沒有指定調。用 C、Am、F、G 當例子。工具一次看兩個：先 C → Am，再 F → G。每小節只彈 3–5 個音，換和弦的第一個音必須是該和弦的 R、3 或 5。錄 16 小節來數命中率。",
+            "exercise": "I–vi–IV–V 沒有指定調。用 C、Am、F、G 當例子。工具一次看兩個：先 C → Am，再 F → G。每小節只彈 3–5 個音，換和弦的第一個音必須是該和弦的 R、3 或 5。節拍器開 60 BPM、八分音符。錄 16 小節來數命中率。",
             "tools": [
               {
                 "id": "chord",
@@ -703,9 +709,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -727,7 +733,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "沿用上一週的 C–Am–F–G。今天只選一個限制：每句從 3rd 開始，或每句結束在 5th。錄 8–16 小節，回聽時各指一次成功與一次錯誤。",
+            "exercise": "沿用上一週的 C–Am–F–G，速度也沿用 60 BPM、八分音符。今天只選一個限制：每句從 3rd 開始，或每句結束在 5th。錄 8–16 小節，回聽時各指一次成功與一次錯誤。",
             "tools": [
               {
                 "id": "chord",
@@ -737,9 +743,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -857,7 +863,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "用 C♯ minor pentatonic 錄第一版（整段不換）。第二版依 C♯m、A、E、B 切換對應的 pentatonic，工具可分別打開核對。第三版混合，16 小節不停，並說出你留下的共同音。",
+            "exercise": "用 C♯ minor pentatonic 錄第一版（整段不換）。第二版依 C♯m、A、E、B 切換對應的 pentatonic，工具可分別打開核對。第三版混合，16 小節不停，並說出你留下的共同音。三版用同一個 60 BPM 四分音符，方便比較。處方沒有指定 BPM。",
             "tools": [
               {
                 "id": "chord",
@@ -873,9 +879,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -988,7 +994,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "打開 C，接著看 Am。在 1–2–3 弦彈出 triad，說出品質，再自己接上 Dm 與 G。換到第二個音域再錄 16 小節。低音弦保持安靜。節拍器用你不會趕的速度守住八分音符。",
+            "exercise": "打開 C，接著看 Am。在 1–2–3 弦彈出 triad，說出品質，再自己接上 Dm 與 G。換到第二個音域再錄 16 小節。低音弦保持安靜。節拍器開 60 BPM、八分音符；會趕就把 BPM 調低。處方沒有寫死速度。",
             "tools": [
               {
                 "id": "chord",
@@ -1004,9 +1010,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1028,7 +1034,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "仍是 C–Am–Dm–G。每個和弦先彈高音三弦，再改成只留兩音的 dyad。然後在同一個速度上只練一種：ghost 或 palm mute。錄「滿和弦」和「dyad」兩版各 8 小節。節拍器還沒上線，速度選一個 16 分音符不會糊掉的 BPM，寫在紀錄裡。",
+            "exercise": "仍是 C–Am–Dm–G。每個和弦先彈高音三弦，再改成只留兩音的 dyad。然後在同一個速度上只練一種：ghost 或 palm mute。錄「滿和弦」和「dyad」兩版各 8 小節。節拍器開 60 BPM、十六分音符，當手部格子。十六分糊了就把 BPM 調低，並把最後用的數字寫在紀錄裡。",
             "tools": [
               {
                 "id": "chord",
@@ -1038,9 +1044,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 十六分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=sixteenth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1062,7 +1068,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "用 C–Am–Dm–G，每次換和弦選工具上移動較少的轉位。在第 4 小節的空位加一個 2–4 音的 fill，下一小節第一拍必須回到和弦。錄 16 小節。",
+            "exercise": "用 C–Am–Dm–G，每次換和弦選工具上移動較少的轉位。在第 4 小節的空位加一個 2–4 音的 fill，下一小節第一拍必須回到和弦。節拍器沿用 60 BPM、八分音符。錄 16 小節。",
             "tools": [
               {
                 "id": "chord",
@@ -1078,9 +1084,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1140,7 +1146,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "三個 root 由你選。工具先用 C 當例子：打開 Cmaj7，寫下組成音，再改成 C7、Cm7、Cm7b5，每次只說哪一個音變了。另外兩個 root 在紙上寫完，再回琴上抽查。慢到能唱出 3rd 和 7th。節拍器上線前，這個速度自己用腳點。",
+            "exercise": "三個 root 由你選。工具先用 C 當例子：打開 Cmaj7，寫下組成音，再改成 C7、Cm7、Cm7b5，每次只說哪一個音變了。另外兩個 root 在紙上寫完，再回琴上抽查。節拍器開 60 BPM、四分音符，慢到能唱出 3rd 和 7th。處方只說慢，沒有寫死 BPM。",
             "tools": [
               {
                 "id": "chord",
@@ -1168,9 +1174,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1192,7 +1198,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "從 Cmaj7 開始，接著 Dm7，然後自己接 Em7、Fmaj7、G7、Am7、Bm7b5。每個和弦慢彈 R–7–5–3–R，說出 3rd 和 7th。錄一整輪，中間不停。",
+            "exercise": "從 Cmaj7 開始，接著 Dm7，然後自己接 Em7、Fmaj7、G7、Am7、Bm7b5。每個和弦慢彈 R–7–5–3–R，說出 3rd 和 7th。節拍器開 60 BPM、八分音符，對應「先停在慢的八分音符」。錄一整輪，中間不停。",
             "tools": [
               {
                 "id": "chord",
@@ -1208,9 +1214,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1232,7 +1238,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "用 Cmaj7 當例子（根音沒有被指定）。在工具的按法裡看上四弦 Drop 2，但先自己從 close position 推導，再對答案。紙上留兩個 voicing 的音名。",
+            "exercise": "用 Cmaj7 當例子（根音沒有被指定）。在工具的按法裡看上四弦 Drop 2，但先自己從 close position 推導，再對答案。紙上留兩個 voicing 的音名。慢速用 60 BPM 的四分音符。",
             "tools": [
               {
                 "id": "chord",
@@ -1242,9 +1248,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1266,7 +1272,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "根音用 C 當例子。先把 Cmaj7 的四個轉位在最高四弦連彈，再換 C7 或 Cm7 做第二次。每次起手前說出最高音是哪個和弦音。",
+            "exercise": "根音用 C 當例子。先把 Cmaj7 的四個轉位在最高四弦連彈，再換 C7 或 Cm7 做第二次。每次起手前說出最高音是哪個和弦音。節拍器 60 BPM、四分音符。",
             "tools": [
               {
                 "id": "chord",
@@ -1282,9 +1288,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1306,7 +1312,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "處方只寫兩個調。先做 C 的 ii–V–I（Dm7–G7–Cmaj7），在按法裡選 shell 或 Drop 2 裡移動最少的那個，再換成 F。各錄一遍不停拍的循環。",
+            "exercise": "處方只寫兩個調。先做 C 的 ii–V–I（Dm7–G7–Cmaj7），在按法裡選 shell 或 Drop 2 裡移動最少的那個，再換成 F。各錄一遍不停拍的循環。節拍器 60 BPM、四分音符。",
             "tools": [
               {
                 "id": "chord",
@@ -1322,9 +1328,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1346,7 +1352,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "若你還沒有 Autumn Leaves 的譜，就用 C 調 ii–V–I 連成 16 小節，規則相同：每次選最近 voicing，不回固定把位。錄慢速一版。有譜再把同一套規則搬過去。",
+            "exercise": "若你還沒有 Autumn Leaves 的譜，就用 C 調 ii–V–I 連成 16 小節，規則相同：每次選最近 voicing，不回固定把位。用 60 BPM 的四分音符錄慢速一版。有譜再把同一套規則搬過去。",
             "tools": [
               {
                 "id": "chord",
@@ -1356,9 +1362,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1380,7 +1386,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "先在 Cmaj7 上寫四個最高音，每個音找一個相容的 voicing，彈的時候只讓最高音突出。然後把同一條高音線移到 F。工具用來檢查 voicing，高音的順序要先寫在紙上。",
+            "exercise": "先在 Cmaj7 上寫四個最高音，每個音找一個相容的 voicing，彈的時候只讓最高音突出。然後把同一條高音線移到 F。工具用來檢查 voicing，高音的順序要先寫在紙上。節拍器 60 BPM、四分音符。",
             "tools": [
               {
                 "id": "chord",
@@ -1396,9 +1402,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1420,7 +1426,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "用 Am、Dm、Em 當三個例子。每個先彈和弦，再只在該根音的 minor pentatonic 裡彈一小句，最後停在 root。三個連錄。不要在這週混進大調。",
+            "exercise": "用 Am、Dm、Em 當三個例子。每個先彈和弦，再只在該根音的 minor pentatonic 裡彈一小句，最後停在 root。三個連錄，節拍器 60 BPM、八分音符。不要在這週混進大調。",
             "tools": [
               {
                 "id": "chord",
@@ -1436,9 +1442,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1500,7 +1506,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "用 C → Am，再 F → G。每次換和弦選移動最少的 triad 轉位，只彈三個音。重複到可以不看工具為止，然後錄一輪。",
+            "exercise": "用 C → Am，再 F → G。每次換和弦選移動最少的 triad 轉位，只彈三個音。重複到可以不看工具為止，然後用 60 BPM、八分音符錄一輪。",
             "tools": [
               {
                 "id": "chord",
@@ -1516,9 +1522,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1540,7 +1546,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "仍是 C–Am–F–G。小節的主體只彈 triad，在空位加 2–4 個音，下一拍回到該和弦的 chord tone。錄 16 小節。",
+            "exercise": "仍是 C–Am–F–G。小節的主體只彈 triad，在空位加 2–4 個音，下一拍回到該和弦的 chord tone。沿用 60 BPM、八分音符，錄 16 小節。",
             "tools": [
               {
                 "id": "chord",
@@ -1556,9 +1562,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1580,7 +1586,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "sourced",
-            "exercise": "固定 C–Am–F–G、一個 BPM、16 小節。第 1 輪整段 C major pentatonic。第 2 輪每個和弦換自己的 pentatonic。第 3 輪同一 motif，只在換和弦時落 3rd 或 triad。第 4 輪加一個非和弦音，下一強拍解決。四輪用同一個速度。",
+            "exercise": "固定 C–Am–F–G、16 小節。第 1 輪整段 C major pentatonic。第 2 輪每個和弦換自己的 pentatonic。第 3 輪同一 motif，只在換和弦時落 3rd 或 triad。第 4 輪加一個非和弦音，下一強拍解決。四輪都用這個 60 BPM、八分音符，中間不要改。",
             "tools": [
               {
                 "id": "chord",
@@ -1596,9 +1602,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 八分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=eighth&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1620,7 +1626,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "第 13 週沒有新的和弦清單。沿用 C–Am–F–G：第一版只彈每小節一個 triad 或 shell，第二版才把其中兩個換成七和弦或轉位。錄兩版。",
+            "exercise": "第 13 週沒有新的和弦清單。沿用 C–Am–F–G：第一版只彈每小節一個 triad 或 shell，第二版才把其中兩個換成七和弦或轉位。兩版都用 60 BPM 的四分音符。",
             "tools": [
               {
                 "id": "chord",
@@ -1636,9 +1642,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1660,7 +1666,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "沿用上一週的進行。先唱 8 小節高音，每兩個和弦之間至少有一次半音或全音的連接，再配上 chord skeleton。Fill 最多一處。工具用來選不會壓過高音的 voicing。",
+            "exercise": "沿用上一週的進行和 60 BPM 四分音符。先唱 8 小節高音，每兩個和弦之間至少有一次半音或全音的連接，再配上 chord skeleton。Fill 最多一處。工具用來選不會壓過高音的 voicing。",
             "tools": [
               {
                 "id": "chord",
@@ -1670,9 +1676,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
@@ -1728,7 +1734,7 @@ window.GUIDED_FLOW = {
           "practice": {
             "origin": "sourced",
             "linkBasis": "proposed",
-            "exercise": "用你第 15 週的表錄音。工具打開進行的前兩個和弦，確認 Drop 2 或 shell 沒有蓋過最高音。錄 8–16 小節：聽得見旋律、聽得見低音走向、有一個 fill、有一處空白。沒有指定必須是哪一首歌。",
+            "exercise": "用你第 15 週的表錄音。工具打開進行的前兩個和弦，確認 Drop 2 或 shell 沒有蓋過最高音。節拍器 60 BPM、四分音符。錄 8–16 小節：聽得見旋律、聽得見低音走向、有一個 fill、有一處空白。沒有指定必須是哪一首歌。",
             "tools": [
               {
                 "id": "chord",
@@ -1738,9 +1744,9 @@ window.GUIDED_FLOW = {
               },
               {
                 "id": "metronome",
-                "label": "節拍器",
-                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/",
-                "soon": true
+                "label": "節拍器 · 60 四分",
+                "href": "https://emilwu.github.io/guitar-practice-tools/metronome/#bpm=60&meter=4/4&subdivision=quarter&swing=50&accents=annn",
+                "soon": false
               }
             ]
           }
