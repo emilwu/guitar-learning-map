@@ -204,12 +204,19 @@
     return items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   }
 
+  function playlistAccessNote(key) {
+    if (key === "s4neo") return "Stage 4N 播放清單為私人，需用擁有 Emil Wu YouTube 頻道的帳號開啟。";
+    return "播放清單為不公開（unlisted），需透過連結開啟。";
+  }
+
   function renderPlaylistCard(key) {
     const item = data.playlists[key];
     const kindNames = { core: "核心", support: "按需補強", optional: "完成後選修", branch: "曲風專修", reference: "參考", context: "需脈絡" };
+    const privacy = key === "s4neo" ? `<p>此播放清單為私人。</p>` : "";
     return `<article class="playlist-card" data-library-stage="${item.stage}">
       <div class="playlist-meta"><span>${kindNames[item.kind] || escapeHtml(item.kind)}</span><b>${item.count} 項</b></div>
       <h3>${escapeHtml(item.label)}</h3><p>${escapeHtml(item.role)}</p>
+      ${privacy}
       <a href="${playlistUrl(key)}" target="_blank" rel="noreferrer">開啟 Playlist <span aria-hidden="true">↗</span></a>
     </article>`;
   }
@@ -303,7 +310,7 @@
       return `<p class="step-kicker">02 · 看影片</p>
         <h3>${escapeHtml(week.title)}</h3>
         <p>${escapeHtml(data.playlists[week.playlist].label)}。${escapeHtml(lesson.watchFor)}</p>
-        <p class="embed-note">看完回到這裡，按下一步做練習。若播放器是空白或無法播放，用按鈕在 YouTube 開啟。</p>
+        <p class="embed-note">${escapeHtml(playlistAccessNote(week.playlist))}看完回到這裡，按下一步做練習。若播放器是空白或無法播放，用按鈕在 YouTube 開啟。</p>
         <iframe class="video-frame" title="${escapeHtml(`第 ${week.n} 週影片：${week.title}`)}" src="${escapeHtml(embedUrl(week))}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         <div class="step-actions"><a href="${videoUrl(week)}" target="_blank" rel="noreferrer">${openLabel}</a></div>`;
     }

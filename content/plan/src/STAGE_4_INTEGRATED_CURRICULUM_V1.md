@@ -215,7 +215,7 @@ section_index:
 | 19 | `vIMlQQSYLBY`＋`h1Kt11imlPY` 回查 | thirds、chromatic／slide 語彙只加入既有 arrangement，不另背整首 lick |
 | 20 | 自有作品 | 錄 8–16 小節 modern solo-guitar arrangement；至少包含 top melody、空間與兩項選定語彙 |
 
-Neo-Soul 專修不把 altered dominant／diminished 當必修，因現有教材尚未形成安全的漸進鏈。
+Neo-Soul 專修不把 altered dominant／diminished 當必修，因現有教材尚未形成安全的漸進鏈。這一條專修的播放清單是 Stage 4N，狀態為私人。
 
 ## 影片使用與去重規則
 

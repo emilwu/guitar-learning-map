@@ -28,4 +28,4 @@ section_index:
 
 ## 隱私
 
-學習進度只保存在瀏覽器 localStorage（鍵名 `guitar-learning-map-v1`）。網站沒有帳號、追蹤、上傳或伺服器資料庫。YouTube Playlist 目前為私人，只有具權限的頻道帳號能播放。
+學習進度只保存在瀏覽器 localStorage（鍵名 `guitar-learning-map-v1`）。網站沒有帳號、追蹤、上傳或伺服器資料庫。15 個 YouTube 播放清單為不公開（unlisted），需透過連結開啟。Stage 4N（Neo-Soul／Mateus）為私人，只有具權限的頻道帳號能播放。
